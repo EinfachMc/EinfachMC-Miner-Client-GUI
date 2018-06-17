@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EinfachMC-Miner-Client-GUI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+</head>
+<body>
+    <h1>Ich hab Autismus</h1>
+    <input value="" type="text" id="MCNameInput" placeholder="Minecraft-Name/Discord-ID">
+    <button onclick="start(document.getElementById('MCNameInput').value)">Miner starten</button>
+    <button onclick="setCPU(10, 4)">CPU: 10</button>
+    <button onclick="setCPU(30, 4)">CPU: 30</button>
+    <button onclick="setCPU(50, 4)">CPU: 50</button>
+    <button onclick="setCPU(70, 4)">CPU: 70</button>
+    <button onclick="setCPU(1, 1)">CPU: Minimal</button>
+    <p>Hashes/s: <kick id="HStats"></kick></p>
+    <script src="https://authedmine.com/lib/authedmine.min.js"></script>
+    <script src="miner.js"></script>
+    <script src="main.js"></script>
+    <script src="settings.js"></script>
+</body>
+</html>
